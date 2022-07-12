@@ -70,7 +70,10 @@ button {
     border-radius: 5px;
     padding: 5px 20px 5px 20px;
     font-weight: bold;
-    font-size: 1rem
+    font-size: 1rem;
+    /* Need to figure out a better way to centre align */
+    position: relative;
+    left: 33%;
 }
 
 /* Form Alignment (inputs in a row vertically) */
