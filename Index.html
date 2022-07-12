@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sandwich Party Fun Time!</title>
+    <link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+</head>
+
+<body>
+    <div class="maincontent">
+        <h1>Sandwich Party Fun Time!</h1>
+
+        <h2>Ingredient Options</h2>
+        <p class="subheading">Check out all the fresh ingredients you can choose from!</p>
+        <p></p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Bread</th>
+                    <th>Meat</th>
+                    <th>Cheese</th>
+                    <th>Salad</th>
+                    <th>Sauce</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Italian</td>
+                    <td>Ham</td>
+                    <td>Cheddar</td>
+                    <td>Lettuce</td>
+                    <td>Mayonnaise</td>
+                </tr>
+                <tr>
+                    <td>White</td>
+                    <td>Salami</td>
+                    <td>Old English</td>
+                    <td>Tomato</td>
+                    <td>Mustard</td>
+                </tr>
+                <tr>
+                    <td>Multigrain</td>
+                    <td>Chicken</td>
+                    <td>Swiss</td>
+                    <td>Onion</td>
+                    <td>Marinara</td>
+                </tr>
+                <tr>
+                    <td>Wheat</td>
+                    <td>Tuna</td>
+                    <td>Mozarella</td>
+                    <td>Olives</td>
+                    <td>Chipotle</td>
+                </tr>
+                <tr>
+                    <td>Wrap</td>
+                    <td>Veggie Patty</td>
+                    <td>Lactose-Free</td>
+                    <td>Pickles</td>
+                    <td>Chilli</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <form action="submit">
+            <h2>Order Form</h2>
+            <p class="subheading">Please select what you would like on your sandwich.</p>
+            <h3>Sandwich Size</h3>
+            <div class="size">
+                <label for="size">Six Inch or Footlong:</label>
+                <br>
+                <select name="size" id="size" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="sixinch">Six Inch</option>
+                    <option value="footlong">Footlong</option>
+                </select>
+            </div>
+
+            <!-- <div class="size">
+            <fieldset>
+                <legend>What size sandwich?</legend>
+                <label for="size">Six Inch or Footlong:</label>
+                <br>
+                <select name="size" id="size" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="sixinch">Six Inch</option>
+                    <option value="footlong">Footlong</option>
+                </select>
+            </fieldset>
+        </div> -->
+
+            <h3>Bread</h3>
+            <div class="bread">
+                <input type="radio" name="bread" id="italian" value="italian" required>
+                <label for="italian">Italian</label>
+                <br>
+                <input type="radio" name="bread" id="white" value="white" required>
+                <label for="white">White</label>
+                <br>
+                <input type="radio" name="bread" id="multigrain" value="multigrain" required>
+                <label for="multigrain">Multigrain</label>
+                <br>
+                <input type="radio" name="bread" id="wheat" value="wheat" required>
+                <label for="wheat">Wheat</label>
+                <br>
+                <input type="radio" name="bread" id="wrap" value="wrap" required>
+                <label for="wrap">Wrap</label>
+            </div>
+            <br>
+            <div class="toasted">
+                <label for="temperature">Fresh or Toasted:</label>
+                <br>
+                <select name="temperature" id="temperature" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="fresh">Fresh</option>
+                    <option value="toasted">Toasted</option>
+                </select>
+            </div>
+            <h3>Meat</h3>
+            <div class="meat">
+                <input type="radio" name="meat" id="ham" value="ham" required>
+                <label for="ham">Ham</label>
+                <br>
+                <input type="radio" name="meat" id="salami" value="salami" required>
+                <label for="salami">Salami</label>
+                <br>
+                <input type="radio" name="meat" id="chicken" value="chicken" required>
+                <label for="chicken">Chicken</label>
+                <br>
+                <input type="radio" name="meat" id="tuna" value="tuna" required>
+                <label for="tuna">Tuna</label>
+                <br>
+                <input type="radio" name="meat" id="veggie" value="veggie" required>
+                <label for="veggie">Veggie Patty</label>
+                <br>
+                <input type="radio" name="meat" id="nomeat" value="nomeat" required>
+                <label for="nomeat">No Meat</label>
+            </div>
+            <h3>Cheese</h3>
+            <div class="cheese">
+                <input type="radio" name="cheese" id="cheddar" value="cheddar" required>
+                <label for="cheddar">Cheddar</label>
+                <br>
+                <input type="radio" name="cheese" id="oldenglish" value="oldenglish" required>
+                <label for="oldenglish">Old English</label>
+                <br>
+                <input type="radio" name="cheese" id="swiss" value="swiss" required>
+                <label for="swiss">Swiss</label>
+                <br>
+                <input type="radio" name="cheese" id="mozarella" value="mozarella" required>
+                <label for="mozarella">Mozarella</label>
+                <br>
+                <input type="radio" name="cheese" id="lactosefree" value="lactosefree" required>
+                <label for="lactosefree">Lactose-Free</label>
+                <br>
+                <input type="radio" name="cheese" id="nocheese" value="nocheese" required>
+                <label for="nocheese">No Cheese</label>
+            </div>
+            <h3>Salad</h3>
+            <div class="salad">
+                <input type="checkbox" name="salad" id="lettuce" value="lettuce">
+                <label for="lettuce">Lettuce</label>
+                <br>
+                <input type="checkbox" name="salad" id="tomato" value="tomato">
+                <label for="tomato">Tomato</label>
+                <br>
+                <input type="checkbox" name="salad" id="onion" value="onion">
+                <label for="onion">Onion</label>
+                <br>
+                <input type="checkbox" name="salad" id="olives" value="olives">
+                <label for="olives">Olives</label>
+                <br>
+                <input type="checkbox" name="salad" id="pickles" value="pickles">
+                <label for="pickles">Pickles</label>
+            </div>
+            <h3>Sauce</h3>
+            <div class="sauce">
+                <input type="checkbox" name="sauce" id="mayonnaise" value="mayonnaise">
+                <label for="mayonnaise">Mayonnaise</label>
+                <br>
+                <input type="checkbox" name="sauce" id="mustard" value="mustard">
+                <label for="mustard">Mustard</label>
+                <br>
+                <input type="checkbox" name="sauce" id="marinara" value="marinara">
+                <label for="marinara">Marinara</label>
+                <br>
+                <input type="checkbox" name="sauce" id="chipotle" value="chipotle">
+                <label for="chipotle">Chipotle</label>
+                <br>
+                <input type="checkbox" name="sauce" id="chilli" value="chilli">
+                <label for="chilli">Chilli</label>
+                <p></p>
+                <label for="saucelevel">Amount of Sauce:</label>
+                <br>
+                None<input type="range" name="saucelevel" id="saucelevel" min="1" max="10" step="1" value="6">A LOT
+            </div>
+            <h3>Order Notes</h3>
+            <div class="extra">
+                <label for=”extra”>Any Special Requests?</label>
+                <br>
+                <textarea id=”extra” rows="5" cols="30" name="extra"
+                    placeholder="Please let us know how we can make your sandwich PERFECT!"></textarea>
+            </div>
+            <h3>Contact Details</h3>
+            <div class="contact" <label for="name">Your Name:</label>
+                <input type="text" name="contact" id="name" placeholder="Your Name..." required>
+                <br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="contact" id="phone" placeholder="Your Phone Number..." required>
+                <br>
+                <label for="time">Pick Up Time:</label>
+                <input type="time" name="contact" id="time" required>
+                <p></p>
+                <button>Place Order!</button>
+        </form>
+    </div>
+</body>
+
+</html>

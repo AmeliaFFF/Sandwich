@@ -1,0 +1,98 @@
+body {
+    background-image: url(https://thumbs.dreamstime.com/b/sandwich-cartoon-seamless-pattern-background-isolated-fast-food-white-170227297.jpg);
+}
+
+.maincontent {
+    width: 80%;
+    background-color: rgba(255, 205, 122, 0.85);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+    font-family: system-ui;
+    color: rgb(137, 45, 0)
+}
+
+hr {
+    border: 1px solid rgb(137, 45, 0);
+}
+
+h1,
+h2,
+h3,
+p {
+    text-align: center;
+}
+
+td {
+    border: 1px solid rgb(137, 45, 0);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+select {
+    border: 1px solid rgb(137, 45, 0);
+    color: rgb(137, 45, 0);
+}
+
+#name,
+#phone,
+#time,
+#extra,
+#size,
+#temperature {
+    border: 1px solid rgb(137, 45, 0);
+    border-radius: 5px;
+    color: rgb(137, 45, 0);
+}
+
+::placeholder {
+    color: rgb(137, 45, 0);
+}
+
+button {
+    color: rgb(137, 45, 0);
+    background-color: rgb(250, 122, 35);
+    border: 2px solid rgb(137, 45, 0);
+    border-radius: 5px;
+    padding: 5px 20px 5px 20px;
+    font-weight: bold;
+    font-size: 1rem
+}
+
+/* form {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+label,
+input {
+    display: inline-block;
+}
+
+
+label {
+    width: 30%;
+    margin: 0 30% 0 4%;
+} */
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+label,
+input {
+    display: inline-block;
+}
