@@ -1,7 +1,9 @@
+/* Background Image */
 body {
     background-image: url(https://thumbs.dreamstime.com/b/sandwich-cartoon-seamless-pattern-background-isolated-fast-food-white-170227297.jpg);
 }
 
+/* Middle Orange Strip Background */
 .maincontent {
     width: 80%;
     background-color: rgba(255, 205, 122, 0.85);
@@ -13,10 +15,12 @@ body {
     color: rgb(137, 45, 0)
 }
 
+/* Divider between Ingredient Options and Order Form */
 hr {
     border: 1px solid rgb(137, 45, 0);
 }
 
+/* Text Align (Headers, Paragraphs) */
 h1,
 h2,
 h3,
@@ -24,6 +28,7 @@ p {
     text-align: center;
 }
 
+/* Ingredient Options Table */
 .table tbody tr td {
     border: 1px solid rgb(137, 45, 0);
     text-align: center;
@@ -35,11 +40,7 @@ table {
     margin-right: auto;
 }
 
-select {
-    border: 1px solid rgb(137, 45, 0);
-    color: rgb(137, 45, 0);
-}
-
+/* Input Borders */
 #name,
 #phone,
 #time,
@@ -51,10 +52,17 @@ select {
     color: rgb(137, 45, 0);
 }
 
+select {
+    border: 1px solid rgb(137, 45, 0);
+    color: rgb(137, 45, 0);
+}
+
+/* Placeholder Text */
 ::placeholder {
     color: rgb(137, 45, 0);
 }
 
+/* Submit Order Button */
 button {
     color: rgb(137, 45, 0);
     background-color: rgb(250, 122, 35);
@@ -65,28 +73,7 @@ button {
     font-size: 1rem
 }
 
-/* form {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-form {
-    width: 50%;
-    margin: 0 auto;
-}
-
-label,
-input {
-    display: inline-block;
-}
-
-
-label {
-    width: 30%;
-    margin: 0 30% 0 4%;
-} */
-
+/* Form Alignment (inputs in a row vertically) */
 form {
     width: 80%;
     margin: 0 auto;
@@ -97,8 +84,7 @@ input {
     display: inline-block;
 }
 
-/* Experiment */
-
+/* Contact Details (Name, Number Pick Up Time) */
 .rightalign {
     text-align: right;
 }
@@ -108,6 +94,7 @@ input {
     display: inline-block;
 }
 
+/* Order Notes (Any special requests?) */
 .extra,
 .extra table tr ::placeholder {
     text-align: center;
