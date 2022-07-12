@@ -199,22 +199,38 @@
             </div>
             <h3>Order Notes</h3>
             <div class="extra">
-                <label for=”extra”>Any Special Requests?</label>
-                <br>
-                <textarea id=”extra” rows="5" cols="30" name="extra"
-                    placeholder="Please let us know how we can make your sandwich PERFECT!"></textarea>
+                <table>
+                    <tr>
+                        <td><label for=”extra”>Any Special Requests?</label></td>
+                    </tr>
+                    <tr>
+                        <td><textarea id=”extra” rows="3" cols="30" name="extra"
+                                placeholder="Please let us know how we can make your sandwich PERFECT!"></textarea></td>
+                    </tr>
+                </table>
             </div>
             <h3>Contact Details</h3>
-            <div class="contact" <label for="name">Your Name:</label>
-                <input type="text" name="contact" id="name" placeholder="Your Name..." required>
-                <br>
-                <label for="phone">Phone Number:</label>
-                <input type="tel" name="contact" id="phone" placeholder="Your Phone Number..." required>
-                <br>
-                <label for="time">Pick Up Time:</label>
-                <input type="time" name="contact" id="time" required>
-                <p></p>
-                <button>Place Order!</button>
+            <div class="contact">
+                <table>
+                    <tr>
+                        <td class="rightalign"><label for="name">Your Name:</label></td>
+                        <td class="leftalign"><input type="text" name="contact" id="name" placeholder="Your Name..."
+                                required></td>
+                    </tr>
+                    <tr>
+                        <td class="rightalign"><label for="phone">Phone Number:</label></td>
+                        <td class="leftalign"><input type="tel" name="contact" id="phone"
+                                placeholder="Your Phone Number..." required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rightalign"><label for="time">Pick Up Time:</label></td>
+                        <td class="leftalign"><input type="time" name="contact" id="time" required></td>
+                    </tr>
+                </table>
+            </div>
+            <p></p>
+            <button>Place Order!</button>
         </form>
     </div>
 </body>

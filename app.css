@@ -24,7 +24,7 @@ p {
     text-align: center;
 }
 
-td {
+.table tbody tr td {
     border: 1px solid rgb(137, 45, 0);
     text-align: center;
     padding: 0.5rem;
@@ -95,4 +95,20 @@ form {
 label,
 input {
     display: inline-block;
+}
+
+/* Experiment */
+
+.rightalign {
+    text-align: right;
+}
+
+.leftalign {
+    float: left;
+    display: inline-block;
+}
+
+.extra,
+.extra table tr ::placeholder {
+    text-align: center;
 }
